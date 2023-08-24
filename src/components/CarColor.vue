@@ -72,6 +72,7 @@ export default {
     },
     created() {
         this.$emit("authenticated", true);
+        JSON.parse(localStorage.getItem("colors") || '[]')
     }
 }
 </script>

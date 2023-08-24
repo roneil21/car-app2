@@ -99,7 +99,7 @@ export default {
   },
 
   created() {
-
+    JSON.parse(localStorage.getItem("cars") || '[]'),
     this.manufacturers = JSON.parse(localStorage.getItem('manufacturers'))
     this.colors = JSON.parse(localStorage.getItem('colors'))
     this.$emit("authenticated", true);
