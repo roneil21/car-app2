@@ -14,7 +14,7 @@
                         <p>{{ item.color }}</p>
                     </div>
                     <div v-else>
-                        <h2>Car Color:  </h2>
+                        <h2>Car Color: </h2>
                         <input type="text" v-model="item.color" />
                     </div>
 
@@ -72,6 +72,9 @@ export default {
     },
     created() {
         this.$emit("authenticated", true);
+        JSON.parse(localStorage.getItem("colors") || '[]')
+    },
+    mounted() {
         JSON.parse(localStorage.getItem("colors") || '[]')
     }
 }
