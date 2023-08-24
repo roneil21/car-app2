@@ -72,10 +72,10 @@ export default {
     },
     created() {
         this.$emit("authenticated", true);
-        JSON.parse(localStorage.getItem("colors") || '[]')
+        this.colors = JSON.parse(localStorage.getItem("colors") || '[]')
     },
     mounted() {
-        JSON.parse(localStorage.getItem("colors") || '[]')
+        this.colors = JSON.parse(localStorage.getItem("colors") || '[]')
         this.$emit("authenticated", true);
     }
 }

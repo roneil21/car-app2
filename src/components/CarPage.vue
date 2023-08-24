@@ -99,14 +99,14 @@ export default {
   },
 
   created() {
-    JSON.parse(localStorage.getItem("cars") || '[]');
+    this.cars = JSON.parse(localStorage.getItem("cars") || '[]');
     this.manufacturers = JSON.parse(localStorage.getItem('manufacturers'));
     this.colors = JSON.parse(localStorage.getItem('colors'));
     this.$emit("authenticated", true);
     
   },
   mounted() {
-    JSON.parse(localStorage.getItem("cars") || '[]')
+    this.cars = JSON.parse(localStorage.getItem("cars") || '[]');
     this.$emit("authenticated", true);
   }
 }

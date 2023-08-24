@@ -72,10 +72,10 @@ export default {
     },
     created() {
         this.$emit("authenticated", true);
-        JSON.parse(localStorage.getItem("manufacturers") || '[]')
+        this.manufacturers = JSON.parse(localStorage.getItem("manufacturers") || '[]')
     },
     mounted() {
-        JSON.parse(localStorage.getItem("manufacturers") || '[]');
+        this.manufacturers = JSON.parse(localStorage.getItem("manufacturers") || '[]')
         this.$emit("authenticated", true);
     }
 }
