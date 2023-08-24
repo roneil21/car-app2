@@ -107,6 +107,7 @@ export default {
   },
   mounted() {
     JSON.parse(localStorage.getItem("cars") || '[]')
+    this.$emit("authenticated", true);
   }
 }
 </script>

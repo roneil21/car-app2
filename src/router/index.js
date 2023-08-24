@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomeView from '../views/HomeView.vue'
 import Manufacturer from '@/components/Manufacturer.vue'
 import CarColor from '@/components/CarColor.vue'
 import CarPage from '@/components/CarPage.vue'

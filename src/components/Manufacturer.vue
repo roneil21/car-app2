@@ -76,6 +76,7 @@ export default {
     },
     mounted() {
         JSON.parse(localStorage.getItem("manufacturers") || '[]');
+        this.$emit("authenticated", true);
     }
 }
 </script>
