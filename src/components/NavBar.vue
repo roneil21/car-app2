@@ -1,11 +1,11 @@
 <template>
   <div id="links">
     <nav>
-      <RouterLink to="/carpage">Create Car</RouterLink> |
-      <RouterLink to="/manufacturer">Manufacturer</RouterLink>
-      <RouterLink to="/color">Color</RouterLink>
+      <router-link to="/carpage">Create Car</router-link> |
+      <router-link to="/manufacturer">Manufacturer</router-link>
+      <router-link to="/color">Color</router-link>
     </nav>
-    <RouterView />
+    <router-view />
 
     <h1>Create Your Dream Car</h1>
   </div>

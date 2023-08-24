@@ -1,9 +1,9 @@
 <template>
   <div>
     <div id="nav">
-      <RouterLink v-if="authenticated" to="/login" @click.native="logout()" replace>Logout</RouterLink>
+      <router-link v-if="authenticated" to="/login" @click.native="logout()" replace>Logout</router-link>
     </div>
-    <RouterView @authenticated="setAuthenticated" />
+    <router-view @authenticated="setAuthenticated" />
   </div>
 </template>
 
