@@ -7,7 +7,7 @@ import NavBar from '@/components/NavBar.vue'
 import Login from '@/components/Login.vue'
 
 Vue.use(VueRouter)
-history: createWebHistory(import.meta.env.BASE_URL);
+history: createWebHistory();
 const routes = [
  
   {
