@@ -7,7 +7,7 @@ import NavBar from '@/components/NavBar.vue'
 import Login from '@/components/Login.vue'
 
 Vue.use(VueRouter)
-history: createWebHistory();
+
 const routes = [
  
   {
@@ -45,7 +45,7 @@ const routes = [
 
 const router = new VueRouter({
   routes,
- 
+
 })
 
 export default router
