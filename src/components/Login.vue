@@ -29,7 +29,7 @@ export default {
                 if (this.acc.user == this.$parent.adminAccess.username && this.acc.pass == this.$parent.adminAccess.password) {
 
                     this.$emit("authenticated", true);
-                    this.$router.replace({ name: "carpage" }).catch(() => { });
+                    this.$router.replace({ name: "navbar" }).catch(() => { });
 
                 } else {
                     alert("The username and / or password is incorrect");
