@@ -7,8 +7,9 @@ import NavBar from '@/components/NavBar.vue'
 import Login from '@/components/Login.vue'
 
 Vue.use(VueRouter)
-
+history: createWebHistory(import.meta.env.BASE_URL);
 const routes = [
+ 
   {
     path: "/",
     redirect: {
@@ -44,7 +45,7 @@ const routes = [
 
 const router = new VueRouter({
   routes,
-  mode: "history"
+ 
 })
 
 export default router
